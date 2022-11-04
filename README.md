@@ -1,11 +1,46 @@
-![SAP UI5 YouTube Course/ Tutorial](https://user-images.githubusercontent.com/19891236/95460237-996b5c00-096c-11eb-9417-b15a384e098c.png)
-
 # SAP UI5 walkthrough
 
 This is an example app that has been set up for automated unit and integration testing via Karma. 
 The purpose of this repo is to act as a guide on how to set up a UI5 app for automated UI5 testing within an Azure Devops pipeline  
- 
-# If you want to add Karma to your SAPUI5, this is the quick recipe
+It is a combination of [Brandon's example app](https://youtu.be/mmSB85rWQ3w) with [Michael's blog on how to add Karma](https://blogs.sap.com/2021/10/04/run-ui5-tests-with-karma-in-azure-pipelines/).
+
+This repository contains a simple UI5 application with few trivial QUnit tests. Further, there is a Karma config included which executes the UI5 tests which are also executable from a CI-Pipeline like Azure-Pipelines. The configuration is tested with Azure-Pipelines.
+N.B. The repository also includes the Azure-Pipeline configuration.
+
+## Install commands
+ - npm install --global karma-cli
+ - npm install
+ - npm i
+ - npx browserslist@latest --update-db
+ - karma start
+
+## Starting the app
+ - npm start
+
+## Starting the Karma testrunner
+ - npm test
+
+or
+
+ - karma start
+
+## Include Karma testrunner in Azure Pipelines
+
+```
+    - task: PublishTestResults@2
+        inputs:
+            testResultsFormat: 'JUnit'
+            testResultsFiles: '**/TESTS-*.xml'
+        displayName: 'Display Unit Test result'
+
+        - task: PublishCodeCoverageResults@1
+        inputs:
+            codeCoverageTool: 'Cobertura'
+            summaryFileLocation: '$(Build.SourcesDirectory)/coverage/**/cobertura.xml'
+```
+
+
+# If you just want to add automated Karma to an existing SAPUI5 app, this is the quick recipe of changes you need to merge into your app
 
 ## Amendments
  - Add ./karma.conf.js
@@ -38,60 +73,3 @@ The purpose of this repo is to act as a guide on how to set up a UI5 app for aut
 		"rimraf": "3.0.2"
 	},
 ```
-## commands
- - npm install --global karma-cli
- - npm i
- - npx browserslist@latest --update-db
- - karma start
-
-
-## UI5-App including config for Karma testrunner 
-
-This repository contains a simple UI5 application with few trivial QUnit tests defined. Further, there is a Karma config included which executes the UI5 tests and is also executable from a CI-Pipeline like Azure-Pipelines. The configuration is tested with Azure-Pipelines and the repository includes also the Azure-Pipeline configuration.
-
-### Install required modules
-In order to use Karma, you need to install required npm modules. Run the install from the root folder of the repository.
-
-```
-    npm install
-```
-
-### Starting the generated app
-
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
-
-```
-    npm start
-```
-
-### Start the Karma testrunner
-
-```
-    npm test
-```
-or
-```
-    karma start
-```
-
-### Include Karma testrunner in Azure Pipelines
-
-```
-    - task: PublishTestResults@2
-        inputs:
-            testResultsFormat: 'JUnit'
-            testResultsFiles: '**/TESTS-*.xml'
-        displayName: 'Display Unit Test result'
-
-        - task: PublishCodeCoverageResults@1
-        inputs:
-            codeCoverageTool: 'Cobertura'
-            summaryFileLocation: '$(Build.SourcesDirectory)/coverage/**/cobertura.xml'
-```
-
-### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-### Reference
-[Blog post on SCN](https://blogs.sap.com/2021/10/04/run-ui5-tests-with-karma-in-azure-pipelines/)
