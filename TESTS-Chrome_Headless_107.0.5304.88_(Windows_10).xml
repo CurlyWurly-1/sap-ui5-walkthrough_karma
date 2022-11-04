@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 107.0.5304.88 (Windows 10)" package="" timestamp="2022-11-04T16:14:36" id="0" hostname="PETEPC2" tests="2" errors="0" failures="0" time="2.239">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/107.0.5304.88 Safari/537.36"/>
+  </properties>
+  <testcase name="/base/webapp/test/unit/unitTests.qunit.html Formatting functions Should return the translated texts" time="0.228" classname="Chrome_Headless_107_0_5304_88_(Windows_10)./base/webapp/test/unit/unitTests.qunit.html Formatting functions"/>
+  <testcase name="/base/webapp/test/integration/opaTests.qunit.html Navigation Should open the Hello dialog" time="2.011" classname="Chrome_Headless_107_0_5304_88_(Windows_10)./base/webapp/test/integration/opaTests.qunit.html Navigation"/>
+  <system-out>
+    <![CDATA[Chrome Headless 107.0.5304.88 (Windows 10) INFO: '2022-11-04 16:14:35 [unitTests.qunit.html] Device API logging initialized - DEVICE'
+,Chrome Headless 107.0.5304.88 (Windows 10) INFO: '2022-11-04 16:14:36 [opaTests.qunit.html] Device API logging initialized - DEVICE'
+,Chrome Headless 107.0.5304.88 (Windows 10) ERROR: '2022-11-04 16:14:37.084800 MockServer: The metadata for url "undefined" could not be found! -  '
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.142800 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.144300 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.153500 Executing OPA check function on controls null -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.155800 Check function is:
+function(){if(!r.started){r.started=true;e.then(function(){r.done=true},function(e){r.errorMessage="Error while waiting for promise scheduled on flow"+(e?", details: "+k(e):"")})}if(r.errorMessage){throw new Error(r.errorMessage)}else{return!!r.done}} -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.162500 Result of check function is: false -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) ERROR: '2022-11-04 16:14:37.302000 failed to load JavaScript resource: sap/ui/demo/walkthrough/Component-preload.js -  sap.ui.ModuleSystem'
+,Chrome Headless 107.0.5304.88 (Windows 10) ERROR: '2022-11-04 16:14:37.478000 failed to load JavaScript resource: <extendedComponentId>/Component-preload.js -  sap.ui.ModuleSystem'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.626500 Executing OPA check function on controls null -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.626600 Check function is:
+function(){if(!r.started){r.started=true;e.then(function(){r.done=true},function(e){r.errorMessage="Error while waiting for promise scheduled on flow"+(e?", details: "+k(e):"")})}if(r.errorMessage){throw new Error(r.errorMessage)}else{return!!r.done}} -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:37.626699 Result of check function is: false -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.028000 Executing OPA check function on controls null -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.028500 Check function is:
+function(){if(!r.started){r.started=true;e.then(function(){r.done=true},function(e){r.errorMessage="Error while waiting for promise scheduled on flow"+(e?", details: "+k(e):"")})}if(r.errorMessage){throw new Error(r.errorMessage)}else{return!!r.done}} -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.028699 Result of check function is: true -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.034399 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.041600 Executing OPA check function on controls null -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.041800 Check function is:
+function(){if(!r.started){r.started=true;e.then(function(){r.done=true},function(e){r.errorMessage="Error while waiting for promise scheduled on flow"+(e?", details: "+k(e):"")})}if(r.errorMessage){throw new Error(r.errorMessage)}else{return!!r.done}} -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.042300 Result of check function is: true -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.053399 Found 1 blocking out of 24 tracked timeouts
+Timeout: ID: 291 Type: BLOCKING Status: TRACKED Delay: 200 Initiator: 285
+Function: 'function () { [native code] }'
+Stack:     at Object.e [as resolveStackTrace] (https://openui5.hana.ondemand.com/resources/sap/ui/test/autowaiter/_utils.js:6:117)
+    at e (https://openui5.hana.ondemand.com/resources/sap/ui/test/autowaiter/_timeoutWaiter.js:6:1076)
+    at constructor.r (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:428:595)
+    at s.addListener (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:428:1097)
+    at s.addListener (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:428:1334)
+    at constructor.d (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:482:991)
+    at o.attachListener (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:482:1615)
+    at o.register (https://openui5.hana.ondemand.com/resources/sap-ui-core.js:482:2642)
+    at p._handleResize (https://openui5.hana.ondemand.com/resources/sap/m/library-preload.js:157:2513)
+    at p.onAfterRendering (https://openui5.hana.ondemand.com/resources/sap/m/library-preload.js:157:1421) -  sap.ui.test.autowaiter._timeoutWaiter#hasPending'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.461300 Found 0 blocking out of 27 tracked timeouts -  sap.ui.test.autowaiter._timeoutWaiter#hasPending'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.462000 AutoWaiter syncpoint -  sap.ui.test.autowaiter._autoWaiter'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.462800 Found 4 controls of type 'View' in page -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.462899 Found 1 views with viewName 'sap.ui.demo.walkthrough.view.HelloPanel' -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.462899 Found view with ID 'undefined' and viewName 'sap.ui.demo.walkthrough.view.HelloPanel' -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.463000 Found control with ID 'helloDialogButton' and controlType 'sap.m.Button' in view 'sap.ui.demo.walkthrough.view.HelloPanel' -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.464300 1 out of 1 controls met the matchers pipeline requirements -  sap.ui.test.pipelines.MatcherPipeline'
+,Chrome Headless 107.0.5304.88 (Windows 10) INFO: '2022-11-04 16:14:38.464800 Found a DOM reference for the control 'Element sap.m.Button#__xmlview0--helloDialogButton'. Executing 'sap.ui.test.actions.Press' on the DOM element with ID '__xmlview0--helloDialogButton' -  sap.ui.test.actions.Press'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.464899 Pressed the control Element sap.m.Button#__xmlview0--helloDialogButton -  sap.ui.test.actions.Press'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.480600 Found 0 controls of type 'sap.m.Dialog' in page -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.481300 No controls found so matcher pipeline processing was skipped -  sap.ui.test.pipelines.MatcherPipeline'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.481500 Matchers found no controls so check function will be skipped -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.896899 Found 1 controls of type 'sap.m.Dialog' in page -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.899000 1 out of 1 controls met the matchers pipeline requirements -  sap.ui.test.pipelines.MatcherPipeline'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.899600 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.913300 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.919199 Executing OPA check function on controls null -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.919399 Check function is:
+function(){if(!r.started){r.started=true;e.then(function(){r.done=true},function(e){r.errorMessage="Error while waiting for promise scheduled on flow"+(e?", details: "+k(e):"")})}if(r.errorMessage){throw new Error(r.errorMessage)}else{return!!r.done}} -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.919500 Result of check function is: true -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.925300 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.932199 Execute success handler -  sap.ui.test.Opa5'
+,Chrome Headless 107.0.5304.88 (Windows 10) DEBUG: '2022-11-04 16:14:38.967800 Execute success handler -  sap.ui.test.Opa5'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
