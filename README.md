@@ -3,7 +3,7 @@
 # SAP UI5 walkthrough
 
 This is an example app that has been set up for automated unit and integration testing via Karma. 
-The intetino is for it to be used in an Azure Devops pipelines  
+The purpose of this repo is to act as a guide on how to set up a UI5 app for automated UI5 testing within an Azure Devops pipeline  
  
 # If you want to add Karma to your SAPUI5, this is the quick recipe
 
